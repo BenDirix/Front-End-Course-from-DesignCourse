@@ -83,6 +83,7 @@
     </div>
 
     <footer>
+
         <div class="footer-container">
             <div class="container">
                 <a href="#">
@@ -99,7 +100,25 @@
                 </ul>
             </div>
         </div>
+
     </footer>
+    <div class="footer-container-behind"></div>
+
+
+    <script>
+        let menu = document.getElementById("menu");
+        let nav = document.getElementById("nav");
+        let exit = document.getElementById("exit");
+
+        menu.addEventListener('click', function (e) {
+            nav.classList.toggle('hide-mobile')
+            e.preventDefault();
+        })
+        exit.addEventListener('click', function (e) {
+            nav.classList.add('hide-mobile')
+            e.preventDefault();
+        })
+    </script>
 
 </body>
 
